@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './components/home/header/header.component';
 import { BookCardComponent } from './components/home/book-card/book-card.component';
+import { BookContainerComponent } from './components/home/book-container/book-container.component';
 const routes: Routes = [
+  
   {
     'path': 'header',
     component: HeaderComponent
@@ -10,6 +12,10 @@ const routes: Routes = [
   {
     'path': 'bookcard',
     component: BookCardComponent,
+  },
+  {
+    'path': 'bookscontainer',
+    component: BookContainerComponent ,
   }
 ];
 

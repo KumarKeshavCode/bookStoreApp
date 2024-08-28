@@ -16,13 +16,9 @@ export class BookContainerComponent {
   ngOnInit() :void {
     this.bookservice.getbooksApi('/bookstore_user/get/book').subscribe({
       next :(Response :any)=>{
-
         this.booksList=Response.result;
-
         this.filterProductList=[...this.booksList];
         console.log(Response);
-
-
       },
       error :(error :any)=>{
         console.log(error);

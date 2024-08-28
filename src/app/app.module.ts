@@ -17,6 +17,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { BookContainerComponent } from './components/home/book-container/book-container.component';
 
 
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { BookContainerComponent } from './components/home/book-container/book-co
     MatFormFieldModule,
     FormsModule,
     MatIconModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,15 @@
 <p>book-card works!</p>
+<div class="card-container">
+    <div class="bookimg">
+        <img class="img" [src]="imagePath" alt="">
+    </div>
+    <div class="bookinfo">
+        <h3 class="book-title">{{book.bookName}}</h3>
+        <span class="book-author">by {{book.bookAuthore}}</span>
+        <div>
+            <span class="book-rating">4.5</span>
+            <span></span>
+        </div>
+        <h2  class="originalPrice"> Rs. {{book.discountPrice}} <span class="offer">Rs. {{book.price}}</span></h2>
+    </div>
+</div>
