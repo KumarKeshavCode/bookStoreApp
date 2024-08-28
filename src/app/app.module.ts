@@ -13,6 +13,9 @@ import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { HttpClientModule } from '@angular/common/http';
+import { BookContainerComponent } from './components/home/book-container/book-container.component';
+
 
 
 @NgModule({
@@ -21,7 +24,8 @@ import { MatIconModule } from '@angular/material/icon';
     LoginSignupComponent,
     ForgetPasswordComponent,
     HeaderComponent,
-    BookCardComponent
+    BookCardComponent,
+    BookContainerComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
